@@ -14,7 +14,6 @@ import pulp
 from pulp import LpMinimize, LpVariable, LpProblem, lpSum, LpStatus, value
 import json
 from pathlib import Path
-from tabulate import tabulate
 import sys
 from datetime import datetime
 from collections import deque
