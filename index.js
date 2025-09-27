@@ -1,12 +1,13 @@
 // index.js
 const express = require("express");
 const { spawn } = require("child_process");
+const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
 
 const app = express();
 app.use(express.json());
-
+app.use(cors());
 const schedulerDir = path.join(__dirname, "TrainScheduler");
 const trainDataPath = path.join(schedulerDir, "train_data.json");
 const outputPath = path.join(schedulerDir, "output.json");
