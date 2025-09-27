@@ -1,0 +1,93 @@
+{
+  "timestamp": "2025-09-26T21:59:46.502512",
+  "model_type": "Enhanced Dynamic Headway Scheduling",
+  "performance_metrics": {
+    "total_completion_time_minutes": 187.34,
+    "average_completion_time_minutes": 23.42,
+    "total_delay_minutes": 40.0,
+    "average_delay_minutes": 5.0,
+    "running_trains_count": 8,
+    "stopped_trains_count": 2,
+    "success_rate_percent": 80.0,
+    "dynamic_headway_efficiency": "Applied based on relative train speeds"
+  },
+  "dynamic_headway_summary": {
+    "min_headway_used": 1.0,
+    "safety_margin_applied": 1.5,
+    "total_section_conflicts_analyzed": 6,
+    "safe_headway_count": 6,
+    "description": "Dynamic headway calculations based on relative train speeds allow faster trains to follow slower trains more closely, while requiring larger gaps when slower trains follow faster ones."
+  },
+  "train_summary": {
+    "1": {
+      "status": "completed",
+      "completion_time": 27.2,
+      "delay": 10.0,
+      "route": "Central → Airport",
+      "max_speed": 150
+    },
+    "2": {
+      "status": "completed",
+      "completion_time": 36.0,
+      "delay": 12.0,
+      "route": "Central → Industrial",
+      "max_speed": 80
+    },
+    "3": {
+      "status": "completed",
+      "completion_time": 25.0,
+      "delay": 2.0,
+      "route": "North → Airport",
+      "max_speed": 120
+    },
+    "4": {
+      "status": "completed",
+      "completion_time": 14.0,
+      "delay": 2.0,
+      "route": "Central → South",
+      "max_speed": 100
+    },
+    "5": {
+      "status": "completed",
+      "completion_time": 13.64,
+      "delay": 0.0,
+      "route": "East → Airport",
+      "max_speed": 110
+    },
+    "6": {
+      "status": "completed",
+      "completion_time": 25.0,
+      "delay": 2.0,
+      "route": "Central → Industrial",
+      "max_speed": 60
+    },
+    "7": {
+      "status": "stopped",
+      "completion_time": null,
+      "delay": null,
+      "route": "West → Airport",
+      "max_speed": 130
+    },
+    "8": {
+      "status": "completed",
+      "completion_time": 30.5,
+      "delay": 8.0,
+      "route": "Central → Industrial",
+      "max_speed": 90
+    },
+    "9": {
+      "status": "stopped",
+      "completion_time": null,
+      "delay": null,
+      "route": "Industrial → Central",
+      "max_speed": 70
+    },
+    "10": {
+      "status": "completed",
+      "completion_time": 16.0,
+      "delay": 4.0,
+      "route": "Central → South",
+      "max_speed": 95
+    }
+  }
+}

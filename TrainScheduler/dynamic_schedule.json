@@ -1,0 +1,1159 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-26T21:59:46.502512",
+    "solver_status": "Optimal",
+    "model_type": "Dynamic Headway Scheduling",
+    "min_headway_minutes": 1.0,
+    "safety_margin": 1.5,
+    "total_trains": 10,
+    "total_sections": 12,
+    "total_stations": 7
+  },
+  "stations": {
+    "1": "Central",
+    "2": "North",
+    "3": "East",
+    "4": "South",
+    "5": "West",
+    "6": "Industrial",
+    "7": "Airport"
+  },
+  "sections": {
+    "1": {
+      "from_station": 1,
+      "to_station": 2,
+      "from_station_name": "Central",
+      "to_station_name": "North",
+      "distance_km": 15,
+      "max_speed_kmh": 120
+    },
+    "2": {
+      "from_station": 1,
+      "to_station": 3,
+      "from_station_name": "Central",
+      "to_station_name": "East",
+      "distance_km": 12,
+      "max_speed_kmh": 100
+    },
+    "3": {
+      "from_station": 1,
+      "to_station": 4,
+      "from_station_name": "Central",
+      "to_station_name": "South",
+      "distance_km": 18,
+      "max_speed_kmh": 90
+    },
+    "4": {
+      "from_station": 1,
+      "to_station": 5,
+      "from_station_name": "Central",
+      "to_station_name": "West",
+      "distance_km": 10,
+      "max_speed_kmh": 110
+    },
+    "5": {
+      "from_station": 2,
+      "to_station": 6,
+      "from_station_name": "North",
+      "to_station_name": "Industrial",
+      "distance_km": 8,
+      "max_speed_kmh": 60
+    },
+    "6": {
+      "from_station": 3,
+      "to_station": 7,
+      "from_station_name": "East",
+      "to_station_name": "Airport",
+      "distance_km": 25,
+      "max_speed_kmh": 160
+    },
+    "7": {
+      "from_station": 4,
+      "to_station": 6,
+      "from_station_name": "South",
+      "to_station_name": "Industrial",
+      "distance_km": 14,
+      "max_speed_kmh": 80
+    },
+    "8": {
+      "from_station": 5,
+      "to_station": 6,
+      "from_station_name": "West",
+      "to_station_name": "Industrial",
+      "distance_km": 16,
+      "max_speed_kmh": 70
+    },
+    "9": {
+      "from_station": 2,
+      "to_station": 3,
+      "from_station_name": "North",
+      "to_station_name": "East",
+      "distance_km": 20,
+      "max_speed_kmh": 140
+    },
+    "10": {
+      "from_station": 3,
+      "to_station": 4,
+      "from_station_name": "East",
+      "to_station_name": "South",
+      "distance_km": 22,
+      "max_speed_kmh": 95
+    },
+    "11": {
+      "from_station": 6,
+      "to_station": 7,
+      "from_station_name": "Industrial",
+      "to_station_name": "Airport",
+      "distance_km": 30,
+      "max_speed_kmh": 180
+    },
+    "12": {
+      "from_station": 6,
+      "to_station": 1,
+      "from_station_name": "Industrial",
+      "to_station_name": "Central",
+      "distance_km": 35,
+      "max_speed_kmh": 80
+    }
+  },
+  "train_results": {
+    "1": {
+      "train_id": 1,
+      "start_station": 1,
+      "end_station": 7,
+      "start_station_name": "Central",
+      "end_station_name": "Airport",
+      "max_speed_kmh": 150,
+      "priority_score": 75.0,
+      "base_travel_time_minutes": 17.2,
+      "is_stopped": false,
+      "actual_completion_time_minutes": 27.2,
+      "delay_minutes": 10.0,
+      "path_sections": [
+        2,
+        6
+      ],
+      "schedule": [
+        {
+          "section_id": 2,
+          "from_station": 1,
+          "to_station": 3,
+          "from_station_name": "Central",
+          "to_station_name": "East",
+          "distance_km": 12,
+          "actual_speed_kmh": 100,
+          "entry_time_minutes": 8.0,
+          "exit_time_minutes": 15.2,
+          "travel_time_minutes": 7.2,
+          "entry_time_seconds": 480.0,
+          "exit_time_seconds": 912.0
+        },
+        {
+          "section_id": 6,
+          "from_station": 3,
+          "to_station": 7,
+          "from_station_name": "East",
+          "to_station_name": "Airport",
+          "distance_km": 25,
+          "actual_speed_kmh": 150,
+          "entry_time_minutes": 17.2,
+          "exit_time_minutes": 27.2,
+          "travel_time_minutes": 10.0,
+          "entry_time_seconds": 1032.0,
+          "exit_time_seconds": 1632.0
+        }
+      ],
+      "section_speeds": {
+        "2": 100,
+        "6": 150
+      }
+    },
+    "2": {
+      "train_id": 2,
+      "start_station": 1,
+      "end_station": 6,
+      "start_station_name": "Central",
+      "end_station_name": "Industrial",
+      "max_speed_kmh": 80,
+      "priority_score": 40.0,
+      "base_travel_time_minutes": 24.0,
+      "is_stopped": false,
+      "actual_completion_time_minutes": 36.0,
+      "delay_minutes": 12.0,
+      "path_sections": [
+        3,
+        7
+      ],
+      "schedule": [
+        {
+          "section_id": 3,
+          "from_station": 1,
+          "to_station": 4,
+          "from_station_name": "Central",
+          "to_station_name": "South",
+          "distance_km": 18,
+          "actual_speed_kmh": 80,
+          "entry_time_minutes": 10.0,
+          "exit_time_minutes": 23.5,
+          "travel_time_minutes": 13.5,
+          "entry_time_seconds": 600.0,
+          "exit_time_seconds": 1410.0
+        },
+        {
+          "section_id": 7,
+          "from_station": 4,
+          "to_station": 6,
+          "from_station_name": "South",
+          "to_station_name": "Industrial",
+          "distance_km": 14,
+          "actual_speed_kmh": 80,
+          "entry_time_minutes": 25.5,
+          "exit_time_minutes": 36.0,
+          "travel_time_minutes": 10.5,
+          "entry_time_seconds": 1530.0,
+          "exit_time_seconds": 2160.0
+        }
+      ],
+      "section_speeds": {
+        "3": 80,
+        "7": 80
+      }
+    },
+    "3": {
+      "train_id": 3,
+      "start_station": 2,
+      "end_station": 7,
+      "start_station_name": "North",
+      "end_station_name": "Airport",
+      "max_speed_kmh": 120,
+      "priority_score": 60.0,
+      "base_travel_time_minutes": 23.0,
+      "is_stopped": false,
+      "actual_completion_time_minutes": 25.0,
+      "delay_minutes": 2.0,
+      "path_sections": [
+        5,
+        11
+      ],
+      "schedule": [
+        {
+          "section_id": 5,
+          "from_station": 2,
+          "to_station": 6,
+          "from_station_name": "North",
+          "to_station_name": "Industrial",
+          "distance_km": 8,
+          "actual_speed_kmh": 60,
+          "entry_time_minutes": 0,
+          "exit_time_minutes": 8.0,
+          "travel_time_minutes": 8.0,
+          "entry_time_seconds": 0,
+          "exit_time_seconds": 480.0
+        },
+        {
+          "section_id": 11,
+          "from_station": 6,
+          "to_station": 7,
+          "from_station_name": "Industrial",
+          "to_station_name": "Airport",
+          "distance_km": 30,
+          "actual_speed_kmh": 120,
+          "entry_time_minutes": 10.0,
+          "exit_time_minutes": 25.0,
+          "travel_time_minutes": 15.0,
+          "entry_time_seconds": 600.0,
+          "exit_time_seconds": 1500.0
+        }
+      ],
+      "section_speeds": {
+        "5": 60,
+        "11": 120
+      }
+    },
+    "4": {
+      "train_id": 4,
+      "start_station": 1,
+      "end_station": 4,
+      "start_station_name": "Central",
+      "end_station_name": "South",
+      "max_speed_kmh": 100,
+      "priority_score": 100.0,
+      "base_travel_time_minutes": 12.0,
+      "is_stopped": false,
+      "actual_completion_time_minutes": 14.0,
+      "delay_minutes": 2.0,
+      "path_sections": [
+        3
+      ],
+      "schedule": [
+        {
+          "section_id": 3,
+          "from_station": 1,
+          "to_station": 4,
+          "from_station_name": "Central",
+          "to_station_name": "South",
+          "distance_km": 18,
+          "actual_speed_kmh": 90,
+          "entry_time_minutes": 2.0,
+          "exit_time_minutes": 14.0,
+          "travel_time_minutes": 12.0,
+          "entry_time_seconds": 120.0,
+          "exit_time_seconds": 840.0
+        }
+      ],
+      "section_speeds": {
+        "3": 90
+      }
+    },
+    "5": {
+      "train_id": 5,
+      "start_station": 3,
+      "end_station": 7,
+      "start_station_name": "East",
+      "end_station_name": "Airport",
+      "max_speed_kmh": 110,
+      "priority_score": 110.0,
+      "base_travel_time_minutes": 13.64,
+      "is_stopped": false,
+      "actual_completion_time_minutes": 13.64,
+      "delay_minutes": 0.0,
+      "path_sections": [
+        6
+      ],
+      "schedule": [
+        {
+          "section_id": 6,
+          "from_station": 3,
+          "to_station": 7,
+          "from_station_name": "East",
+          "to_station_name": "Airport",
+          "distance_km": 25,
+          "actual_speed_kmh": 110,
+          "entry_time_minutes": 0,
+          "exit_time_minutes": 13.636,
+          "travel_time_minutes": 13.636,
+          "entry_time_seconds": 0,
+          "exit_time_seconds": 818.2
+        }
+      ],
+      "section_speeds": {
+        "6": 110
+      }
+    },
+    "6": {
+      "train_id": 6,
+      "start_station": 1,
+      "end_station": 6,
+      "start_station_name": "Central",
+      "end_station_name": "Industrial",
+      "max_speed_kmh": 60,
+      "priority_score": 30.0,
+      "base_travel_time_minutes": 23.0,
+      "is_stopped": false,
+      "actual_completion_time_minutes": 25.0,
+      "delay_minutes": 2.0,
+      "path_sections": [
+        1,
+        5
+      ],
+      "schedule": [
+        {
+          "section_id": 1,
+          "from_station": 1,
+          "to_station": 2,
+          "from_station_name": "Central",
+          "to_station_name": "North",
+          "distance_km": 15,
+          "actual_speed_kmh": 60,
+          "entry_time_minutes": 0,
+          "exit_time_minutes": 15.0,
+          "travel_time_minutes": 15.0,
+          "entry_time_seconds": 0,
+          "exit_time_seconds": 900.0
+        },
+        {
+          "section_id": 5,
+          "from_station": 2,
+          "to_station": 6,
+          "from_station_name": "North",
+          "to_station_name": "Industrial",
+          "distance_km": 8,
+          "actual_speed_kmh": 60,
+          "entry_time_minutes": 17.0,
+          "exit_time_minutes": 25.0,
+          "travel_time_minutes": 8.0,
+          "entry_time_seconds": 1020.0,
+          "exit_time_seconds": 1500.0
+        }
+      ],
+      "section_speeds": {
+        "1": 60,
+        "5": 60
+      }
+    },
+    "7": {
+      "train_id": 7,
+      "start_station": 5,
+      "end_station": 7,
+      "start_station_name": "West",
+      "end_station_name": "Airport",
+      "max_speed_kmh": 130,
+      "priority_score": 0,
+      "base_travel_time_minutes": 0,
+      "is_stopped": true,
+      "actual_completion_time_minutes": null,
+      "delay_minutes": null,
+      "path_sections": [],
+      "schedule": [],
+      "section_speeds": {}
+    },
+    "8": {
+      "train_id": 8,
+      "start_station": 1,
+      "end_station": 6,
+      "start_station_name": "Central",
+      "end_station_name": "Industrial",
+      "max_speed_kmh": 90,
+      "priority_score": 45.0,
+      "base_travel_time_minutes": 22.5,
+      "is_stopped": false,
+      "actual_completion_time_minutes": 30.5,
+      "delay_minutes": 8.0,
+      "path_sections": [
+        3,
+        7
+      ],
+      "schedule": [
+        {
+          "section_id": 3,
+          "from_station": 1,
+          "to_station": 4,
+          "from_station_name": "Central",
+          "to_station_name": "South",
+          "distance_km": 18,
+          "actual_speed_kmh": 90,
+          "entry_time_minutes": 6.0,
+          "exit_time_minutes": 18.0,
+          "travel_time_minutes": 12.0,
+          "entry_time_seconds": 360.0,
+          "exit_time_seconds": 1080.0
+        },
+        {
+          "section_id": 7,
+          "from_station": 4,
+          "to_station": 6,
+          "from_station_name": "South",
+          "to_station_name": "Industrial",
+          "distance_km": 14,
+          "actual_speed_kmh": 80,
+          "entry_time_minutes": 20.0,
+          "exit_time_minutes": 30.5,
+          "travel_time_minutes": 10.5,
+          "entry_time_seconds": 1200.0,
+          "exit_time_seconds": 1830.0
+        }
+      ],
+      "section_speeds": {
+        "3": 90,
+        "7": 80
+      }
+    },
+    "9": {
+      "train_id": 9,
+      "start_station": 6,
+      "end_station": 1,
+      "start_station_name": "Industrial",
+      "end_station_name": "Central",
+      "max_speed_kmh": 70,
+      "priority_score": 0,
+      "base_travel_time_minutes": 0,
+      "is_stopped": true,
+      "actual_completion_time_minutes": null,
+      "delay_minutes": null,
+      "path_sections": [],
+      "schedule": [],
+      "section_speeds": {}
+    },
+    "10": {
+      "train_id": 10,
+      "start_station": 1,
+      "end_station": 4,
+      "start_station_name": "Central",
+      "end_station_name": "South",
+      "max_speed_kmh": 95,
+      "priority_score": 95.0,
+      "base_travel_time_minutes": 12.0,
+      "is_stopped": false,
+      "actual_completion_time_minutes": 16.0,
+      "delay_minutes": 4.0,
+      "path_sections": [
+        3
+      ],
+      "schedule": [
+        {
+          "section_id": 3,
+          "from_station": 1,
+          "to_station": 4,
+          "from_station_name": "Central",
+          "to_station_name": "South",
+          "distance_km": 18,
+          "actual_speed_kmh": 90,
+          "entry_time_minutes": 4.0,
+          "exit_time_minutes": 16.0,
+          "travel_time_minutes": 12.0,
+          "entry_time_seconds": 240.0,
+          "exit_time_seconds": 960.0
+        }
+      ],
+      "section_speeds": {
+        "3": 90
+      }
+    }
+  },
+  "section_usage": {
+    "1": {
+      "section_id": 1,
+      "from_station": 1,
+      "to_station": 2,
+      "route_name": "Central → North",
+      "distance_km": 15,
+      "max_speed_kmh": 120,
+      "trains_using": [
+        6
+      ],
+      "utilization_count": 1,
+      "utilization_rate": 0.125,
+      "train_schedules": [
+        {
+          "train_id": 6,
+          "entry_time_minutes": 0,
+          "exit_time_minutes": 15.0,
+          "speed_kmh": 60,
+          "priority": 30.0
+        }
+      ],
+      "headway_analysis": []
+    },
+    "2": {
+      "section_id": 2,
+      "from_station": 1,
+      "to_station": 3,
+      "route_name": "Central → East",
+      "distance_km": 12,
+      "max_speed_kmh": 100,
+      "trains_using": [
+        1
+      ],
+      "utilization_count": 1,
+      "utilization_rate": 0.125,
+      "train_schedules": [
+        {
+          "train_id": 1,
+          "entry_time_minutes": 8.0,
+          "exit_time_minutes": 15.2,
+          "speed_kmh": 100,
+          "priority": 75.0
+        }
+      ],
+      "headway_analysis": []
+    },
+    "3": {
+      "section_id": 3,
+      "from_station": 1,
+      "to_station": 4,
+      "route_name": "Central → South",
+      "distance_km": 18,
+      "max_speed_kmh": 90,
+      "trains_using": [
+        2,
+        4,
+        8,
+        10
+      ],
+      "utilization_count": 4,
+      "utilization_rate": 0.5,
+      "train_schedules": [
+        {
+          "train_id": 4,
+          "entry_time_minutes": 2.0,
+          "exit_time_minutes": 14.0,
+          "speed_kmh": 90,
+          "priority": 100.0
+        },
+        {
+          "train_id": 10,
+          "entry_time_minutes": 4.0,
+          "exit_time_minutes": 16.0,
+          "speed_kmh": 90,
+          "priority": 95.0
+        },
+        {
+          "train_id": 8,
+          "entry_time_minutes": 6.0,
+          "exit_time_minutes": 18.0,
+          "speed_kmh": 90,
+          "priority": 45.0
+        },
+        {
+          "train_id": 2,
+          "entry_time_minutes": 10.0,
+          "exit_time_minutes": 23.5,
+          "speed_kmh": 80,
+          "priority": 40.0
+        }
+      ],
+      "headway_analysis": [
+        {
+          "first_train": 4,
+          "second_train": 10,
+          "actual_gap_minutes": 2.0,
+          "required_headway_minutes": 1.0,
+          "is_safe": true,
+          "first_speed": 90,
+          "second_speed": 90
+        },
+        {
+          "first_train": 10,
+          "second_train": 8,
+          "actual_gap_minutes": 2.0,
+          "required_headway_minutes": 1.0,
+          "is_safe": true,
+          "first_speed": 90,
+          "second_speed": 90
+        },
+        {
+          "first_train": 8,
+          "second_train": 2,
+          "actual_gap_minutes": 4.0,
+          "required_headway_minutes": 1.0,
+          "is_safe": true,
+          "first_speed": 90,
+          "second_speed": 80
+        }
+      ]
+    },
+    "4": {
+      "section_id": 4,
+      "from_station": 1,
+      "to_station": 5,
+      "route_name": "Central → West",
+      "distance_km": 10,
+      "max_speed_kmh": 110,
+      "trains_using": [],
+      "utilization_count": 0,
+      "utilization_rate": 0.0,
+      "train_schedules": [],
+      "headway_analysis": []
+    },
+    "5": {
+      "section_id": 5,
+      "from_station": 2,
+      "to_station": 6,
+      "route_name": "North → Industrial",
+      "distance_km": 8,
+      "max_speed_kmh": 60,
+      "trains_using": [
+        3,
+        6
+      ],
+      "utilization_count": 2,
+      "utilization_rate": 0.25,
+      "train_schedules": [
+        {
+          "train_id": 3,
+          "entry_time_minutes": 0,
+          "exit_time_minutes": 8.0,
+          "speed_kmh": 60,
+          "priority": 60.0
+        },
+        {
+          "train_id": 6,
+          "entry_time_minutes": 17.0,
+          "exit_time_minutes": 25.0,
+          "speed_kmh": 60,
+          "priority": 30.0
+        }
+      ],
+      "headway_analysis": [
+        {
+          "first_train": 3,
+          "second_train": 6,
+          "actual_gap_minutes": 17.0,
+          "required_headway_minutes": 1.0,
+          "is_safe": true,
+          "first_speed": 60,
+          "second_speed": 60
+        }
+      ]
+    },
+    "6": {
+      "section_id": 6,
+      "from_station": 3,
+      "to_station": 7,
+      "route_name": "East → Airport",
+      "distance_km": 25,
+      "max_speed_kmh": 160,
+      "trains_using": [
+        1,
+        5
+      ],
+      "utilization_count": 2,
+      "utilization_rate": 0.25,
+      "train_schedules": [
+        {
+          "train_id": 5,
+          "entry_time_minutes": 0,
+          "exit_time_minutes": 13.636,
+          "speed_kmh": 110,
+          "priority": 110.0
+        },
+        {
+          "train_id": 1,
+          "entry_time_minutes": 17.2,
+          "exit_time_minutes": 27.2,
+          "speed_kmh": 150,
+          "priority": 75.0
+        }
+      ],
+      "headway_analysis": [
+        {
+          "first_train": 5,
+          "second_train": 1,
+          "actual_gap_minutes": 17.2,
+          "required_headway_minutes": 13.636,
+          "is_safe": true,
+          "first_speed": 110,
+          "second_speed": 150
+        }
+      ]
+    },
+    "7": {
+      "section_id": 7,
+      "from_station": 4,
+      "to_station": 6,
+      "route_name": "South → Industrial",
+      "distance_km": 14,
+      "max_speed_kmh": 80,
+      "trains_using": [
+        2,
+        8
+      ],
+      "utilization_count": 2,
+      "utilization_rate": 0.25,
+      "train_schedules": [
+        {
+          "train_id": 8,
+          "entry_time_minutes": 20.0,
+          "exit_time_minutes": 30.5,
+          "speed_kmh": 80,
+          "priority": 45.0
+        },
+        {
+          "train_id": 2,
+          "entry_time_minutes": 25.5,
+          "exit_time_minutes": 36.0,
+          "speed_kmh": 80,
+          "priority": 40.0
+        }
+      ],
+      "headway_analysis": [
+        {
+          "first_train": 8,
+          "second_train": 2,
+          "actual_gap_minutes": 5.5,
+          "required_headway_minutes": 1.0,
+          "is_safe": true,
+          "first_speed": 80,
+          "second_speed": 80
+        }
+      ]
+    },
+    "8": {
+      "section_id": 8,
+      "from_station": 5,
+      "to_station": 6,
+      "route_name": "West → Industrial",
+      "distance_km": 16,
+      "max_speed_kmh": 70,
+      "trains_using": [],
+      "utilization_count": 0,
+      "utilization_rate": 0.0,
+      "train_schedules": [],
+      "headway_analysis": []
+    },
+    "9": {
+      "section_id": 9,
+      "from_station": 2,
+      "to_station": 3,
+      "route_name": "North → East",
+      "distance_km": 20,
+      "max_speed_kmh": 140,
+      "trains_using": [],
+      "utilization_count": 0,
+      "utilization_rate": 0.0,
+      "train_schedules": [],
+      "headway_analysis": []
+    },
+    "10": {
+      "section_id": 10,
+      "from_station": 3,
+      "to_station": 4,
+      "route_name": "East → South",
+      "distance_km": 22,
+      "max_speed_kmh": 95,
+      "trains_using": [],
+      "utilization_count": 0,
+      "utilization_rate": 0.0,
+      "train_schedules": [],
+      "headway_analysis": []
+    },
+    "11": {
+      "section_id": 11,
+      "from_station": 6,
+      "to_station": 7,
+      "route_name": "Industrial → Airport",
+      "distance_km": 30,
+      "max_speed_kmh": 180,
+      "trains_using": [
+        3
+      ],
+      "utilization_count": 1,
+      "utilization_rate": 0.125,
+      "train_schedules": [
+        {
+          "train_id": 3,
+          "entry_time_minutes": 10.0,
+          "exit_time_minutes": 25.0,
+          "speed_kmh": 120,
+          "priority": 60.0
+        }
+      ],
+      "headway_analysis": []
+    },
+    "12": {
+      "section_id": 12,
+      "from_station": 6,
+      "to_station": 1,
+      "route_name": "Industrial → Central",
+      "distance_km": 35,
+      "max_speed_kmh": 80,
+      "trains_using": [],
+      "utilization_count": 0,
+      "utilization_rate": 0.0,
+      "train_schedules": [],
+      "headway_analysis": []
+    }
+  },
+  "timeline_events": [
+    {
+      "time_minutes": 0,
+      "time_seconds": 0,
+      "train_id": 3,
+      "station_id": 2,
+      "station_name": "North",
+      "section_id": 5,
+      "event_type": "departure",
+      "priority": 60.0,
+      "speed_kmh": 60
+    },
+    {
+      "time_minutes": 0,
+      "time_seconds": 0,
+      "train_id": 5,
+      "station_id": 3,
+      "station_name": "East",
+      "section_id": 6,
+      "event_type": "departure",
+      "priority": 110.0,
+      "speed_kmh": 110
+    },
+    {
+      "time_minutes": 0,
+      "time_seconds": 0,
+      "train_id": 6,
+      "station_id": 1,
+      "station_name": "Central",
+      "section_id": 1,
+      "event_type": "departure",
+      "priority": 30.0,
+      "speed_kmh": 60
+    },
+    {
+      "time_minutes": 2.0,
+      "time_seconds": 120.0,
+      "train_id": 4,
+      "station_id": 1,
+      "station_name": "Central",
+      "section_id": 3,
+      "event_type": "departure",
+      "priority": 100.0,
+      "speed_kmh": 90
+    },
+    {
+      "time_minutes": 4.0,
+      "time_seconds": 240.0,
+      "train_id": 10,
+      "station_id": 1,
+      "station_name": "Central",
+      "section_id": 3,
+      "event_type": "departure",
+      "priority": 95.0,
+      "speed_kmh": 90
+    },
+    {
+      "time_minutes": 6.0,
+      "time_seconds": 360.0,
+      "train_id": 8,
+      "station_id": 1,
+      "station_name": "Central",
+      "section_id": 3,
+      "event_type": "departure",
+      "priority": 45.0,
+      "speed_kmh": 90
+    },
+    {
+      "time_minutes": 8.0,
+      "time_seconds": 480.0,
+      "train_id": 1,
+      "station_id": 1,
+      "station_name": "Central",
+      "section_id": 2,
+      "event_type": "departure",
+      "priority": 75.0,
+      "speed_kmh": 100
+    },
+    {
+      "time_minutes": 8.0,
+      "time_seconds": 480.0,
+      "train_id": 3,
+      "station_id": 6,
+      "station_name": "Industrial",
+      "section_id": 5,
+      "event_type": "arrival",
+      "priority": 60.0,
+      "speed_kmh": 60
+    },
+    {
+      "time_minutes": 10.0,
+      "time_seconds": 600.0,
+      "train_id": 2,
+      "station_id": 1,
+      "station_name": "Central",
+      "section_id": 3,
+      "event_type": "departure",
+      "priority": 40.0,
+      "speed_kmh": 80
+    },
+    {
+      "time_minutes": 10.0,
+      "time_seconds": 600.0,
+      "train_id": 3,
+      "station_id": 6,
+      "station_name": "Industrial",
+      "section_id": 11,
+      "event_type": "departure",
+      "priority": 60.0,
+      "speed_kmh": 120
+    },
+    {
+      "time_minutes": 13.636,
+      "time_seconds": 818.2,
+      "train_id": 5,
+      "station_id": 7,
+      "station_name": "Airport",
+      "section_id": 6,
+      "event_type": "arrival",
+      "priority": 110.0,
+      "speed_kmh": 110
+    },
+    {
+      "time_minutes": 14.0,
+      "time_seconds": 840.0,
+      "train_id": 4,
+      "station_id": 4,
+      "station_name": "South",
+      "section_id": 3,
+      "event_type": "arrival",
+      "priority": 100.0,
+      "speed_kmh": 90
+    },
+    {
+      "time_minutes": 15.0,
+      "time_seconds": 900.0,
+      "train_id": 6,
+      "station_id": 2,
+      "station_name": "North",
+      "section_id": 1,
+      "event_type": "arrival",
+      "priority": 30.0,
+      "speed_kmh": 60
+    },
+    {
+      "time_minutes": 15.2,
+      "time_seconds": 912.0,
+      "train_id": 1,
+      "station_id": 3,
+      "station_name": "East",
+      "section_id": 2,
+      "event_type": "arrival",
+      "priority": 75.0,
+      "speed_kmh": 100
+    },
+    {
+      "time_minutes": 16.0,
+      "time_seconds": 960.0,
+      "train_id": 10,
+      "station_id": 4,
+      "station_name": "South",
+      "section_id": 3,
+      "event_type": "arrival",
+      "priority": 95.0,
+      "speed_kmh": 90
+    },
+    {
+      "time_minutes": 17.0,
+      "time_seconds": 1020.0,
+      "train_id": 6,
+      "station_id": 2,
+      "station_name": "North",
+      "section_id": 5,
+      "event_type": "departure",
+      "priority": 30.0,
+      "speed_kmh": 60
+    },
+    {
+      "time_minutes": 17.2,
+      "time_seconds": 1032.0,
+      "train_id": 1,
+      "station_id": 3,
+      "station_name": "East",
+      "section_id": 6,
+      "event_type": "departure",
+      "priority": 75.0,
+      "speed_kmh": 150
+    },
+    {
+      "time_minutes": 18.0,
+      "time_seconds": 1080.0,
+      "train_id": 8,
+      "station_id": 4,
+      "station_name": "South",
+      "section_id": 3,
+      "event_type": "arrival",
+      "priority": 45.0,
+      "speed_kmh": 90
+    },
+    {
+      "time_minutes": 20.0,
+      "time_seconds": 1200.0,
+      "train_id": 8,
+      "station_id": 4,
+      "station_name": "South",
+      "section_id": 7,
+      "event_type": "departure",
+      "priority": 45.0,
+      "speed_kmh": 80
+    },
+    {
+      "time_minutes": 23.5,
+      "time_seconds": 1410.0,
+      "train_id": 2,
+      "station_id": 4,
+      "station_name": "South",
+      "section_id": 3,
+      "event_type": "arrival",
+      "priority": 40.0,
+      "speed_kmh": 80
+    },
+    {
+      "time_minutes": 25.0,
+      "time_seconds": 1500.0,
+      "train_id": 3,
+      "station_id": 7,
+      "station_name": "Airport",
+      "section_id": 11,
+      "event_type": "arrival",
+      "priority": 60.0,
+      "speed_kmh": 120
+    },
+    {
+      "time_minutes": 25.0,
+      "time_seconds": 1500.0,
+      "train_id": 6,
+      "station_id": 6,
+      "station_name": "Industrial",
+      "section_id": 5,
+      "event_type": "arrival",
+      "priority": 30.0,
+      "speed_kmh": 60
+    },
+    {
+      "time_minutes": 25.5,
+      "time_seconds": 1530.0,
+      "train_id": 2,
+      "station_id": 4,
+      "station_name": "South",
+      "section_id": 7,
+      "event_type": "departure",
+      "priority": 40.0,
+      "speed_kmh": 80
+    },
+    {
+      "time_minutes": 27.2,
+      "time_seconds": 1632.0,
+      "train_id": 1,
+      "station_id": 7,
+      "station_name": "Airport",
+      "section_id": 6,
+      "event_type": "arrival",
+      "priority": 75.0,
+      "speed_kmh": 150
+    },
+    {
+      "time_minutes": 30.5,
+      "time_seconds": 1830.0,
+      "train_id": 8,
+      "station_id": 6,
+      "station_name": "Industrial",
+      "section_id": 7,
+      "event_type": "arrival",
+      "priority": 45.0,
+      "speed_kmh": 80
+    },
+    {
+      "time_minutes": 36.0,
+      "time_seconds": 2160.0,
+      "train_id": 2,
+      "station_id": 6,
+      "station_name": "Industrial",
+      "section_id": 7,
+      "event_type": "arrival",
+      "priority": 40.0,
+      "speed_kmh": 80
+    }
+  ],
+  "dynamic_headway_analysis": {
+    "min_headway_used": 1.0,
+    "safety_margin_applied": 1.5,
+    "total_section_conflicts_analyzed": 6,
+    "safe_headway_count": 6,
+    "description": "Dynamic headway calculations based on relative train speeds allow faster trains to follow slower trains more closely, while requiring larger gaps when slower trains follow faster ones."
+  },
+  "performance_metrics": {
+    "total_completion_time_minutes": 187.34,
+    "average_completion_time_minutes": 23.42,
+    "total_delay_minutes": 40.0,
+    "average_delay_minutes": 5.0,
+    "running_trains_count": 8,
+    "stopped_trains_count": 2,
+    "success_rate_percent": 80.0,
+    "dynamic_headway_efficiency": "Applied based on relative train speeds"
+  },
+  "simulation_data": {
+    "min_headway_seconds": 60.0,
+    "safety_margin": 1.5,
+    "time_unit": "minutes",
+    "distance_unit": "kilometers",
+    "speed_unit": "km/h"
+  }
+}
